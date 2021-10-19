@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "datapack-extensions",
+  "version": "${version}",
+  "name": "Datapack Extensions",
+  "description": "Adds more features to minecraft commands and datapacks",
+  "authors": [
+    "vdvman1"
+  ],
+  "contact": {
+    "repo": "https://github.com/vdvman1/DatapackExtensions"
+  },
+  "license": "unlicense",
+  "icon": "assets/datapack-extensions/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.vdv.datapackextensions.client.DatapackExtensionsClient"
+    ],
+    "main": [
+      "com.vdv.datapackextensions.DatapackExtensions"
+    ]
+  },
+  "mixins": [
+    "datapack-extensions.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.2",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  }
+}
